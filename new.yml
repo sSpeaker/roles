@@ -1,0 +1,21 @@
+liquibase: {changeLog: 'classpath:/db/changelog/db.changelog-master.xml', enabled: true}
+management: {contextPath: /actuator}
+ok:
+  client: {accessTokenUri: 'https://api.ok.ru/oauth/token.do', authenticationScheme: query,
+    clientAuthenticationScheme: form, clientId: 1240810752, clientPublicKey: CBAGEGPKEBABABABA,
+    clientSecret: 69E5673FEE849F08741BF358, userAuthorizationUri: 'https://connect.ok.ru/oauth/authorize'}
+  resource: {userInfoUri: 'https://api.ok.ru/'}
+server:
+  contextPath: /api
+  port: 8443
+  ssl: {key-store: keystore.p12, key-store-password: changeit, keyAlias: tomcat, keyStoreType: PKCS12}
+  ui: {url: 'http://127.0.0.1:8080'}
+spring:
+  aop: {proxy-target-class: true}
+  datasource: {driverClassName: org.postgresql.Driver, password: root, url: 'jdbc:postgresql://localhost:5432/ownpleasuredb',
+    username: postgres}
+  jmx: {enabled: false}
+  jpa: {database: POSTGRESQL, database-platform: org.hibernate.dialect.PostgreSQLDialect,
+    hibernate.ddl-auto: none, show-sql: true}
+  security:
+    bcryptPasswordEncoder: {strength: 4}
