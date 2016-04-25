@@ -1,7 +1,0 @@
-server:
-  port: 8443
-  contextPath: /api
-  url: http://127.0.0.1:8080   
-spring:
-    enabled: false
-    proxy-target-class: true  
