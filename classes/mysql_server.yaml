@@ -1,0 +1,14 @@
+service_enabled:
+    type: bool
+    lable: "Enable mysql service"
+    description: "Service will start automaticaly after reboot"
+package_ensure:
+    type: list
+    value: {present, absent, 1.2, 1.3}
+    lable: "Package status"
+    description: "Mysql package status"
+package_name::
+    type: string
+    value: "+*"
+    lable: "Package name"
+    description: "Name of mysql server package"
