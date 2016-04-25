@@ -1,49 +1,7 @@
 server:
   port: 8443
   contextPath: /api
-  ui:
-    url: http://127.0.0.1:8080
-  ssl:
-    key-store: keystore.p12
-    key-store-password: changeit
-    keyStoreType: PKCS12
-    keyAlias: tomcat
-
+  url: http://127.0.0.1:8080   
 spring:
-  jmx:
     enabled: false
-  aop:
-    proxy-target-class: true
-  security:
-    bcryptPasswordEncoder:
-      strength: 4
-  datasource:
-    driverClassName: org.postgresql.Driver
-    url: jdbc:postgresql://localhost:5432/ownpleasuredb
-    username: postgres
-    password: root
-  jpa:
-    database: POSTGRESQL
-    database-platform: org.hibernate.dialect.PostgreSQLDialect
-    hibernate.ddl-auto: none
-    show-sql: true
-    
-liquibase:
-  changeLog: classpath:/db/changelog/db.changelog-master.xml
-  enabled: true  
-    
-management:
-  contextPath: /actuator
-
-ok:
-  client:
-    accessTokenUri: https://api.ok.ru/oauth/token.do
-    userAuthorizationUri: https://connect.ok.ru/oauth/authorize
-    clientId: 1240810752
-    clientSecret: 69E5673FEE849F08741BF358
-    clientPublicKey: CBAGEGPKEBABABABA
-#   scope: VALUABLE_ACCESS
-    authenticationScheme: query
-    clientAuthenticationScheme: form
-  resource:
-    userInfoUri: https://api.ok.ru/
+    proxy-target-class: true  
