@@ -9,4 +9,4 @@ mysql_server:
     service_enabled: true
 ntp:
     package_ensure: present
-    servers:        {"ntp1.corp.com", "ntp2.corp.com}
+    servers:        {"ntp1.corp.com", "ntp2.corp.com"}
