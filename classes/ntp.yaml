@@ -3,8 +3,10 @@ servers:
     value: "+*"
     lable: Servers
     description: "Comma separated list of NTP servers to get time"
+    default: "+*"
 package_ensure:
     type: list
-    value: {present, absent}
+    value: [present, absent]
     lable: "Package status"
     description: "NTP package status"
+    default: "+*"
