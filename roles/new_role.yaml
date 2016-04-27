@@ -2,3 +2,6 @@ apache:
   package_ensure: present
   port: 999
   service_ensure: running
+ntp:
+  package_ensure: present
+  server: '-'
