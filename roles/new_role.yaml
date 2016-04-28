@@ -4,4 +4,4 @@ apache:
   service_ensure: running
 ntp:
   package_ensure: present
-  server: '-'
+  servers: '-'
