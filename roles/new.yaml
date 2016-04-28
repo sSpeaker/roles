@@ -1,0 +1,8 @@
+apache:
+  package_ensure: present
+  port: 999
+  redirect: 'True'
+  service_ensure: running
+ntp:
+  package_ensure: present
+  servers: '-'
