@@ -15,4 +15,9 @@ package_name:
     value: "+*"
     label: "Package name"
     description: "Name of mysql server package"
-    default: "+*" 
+    default: "+*"
+custom:
+    type: text
+    value: {key: value}
+    label: custom
+    default: "" 

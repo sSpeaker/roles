@@ -16,3 +16,8 @@ port:
     label: port
     description: Apache listen port number
     default: 80
+custom:
+    type: text
+    value: {key: value}
+    label: custom
+    default: "" 

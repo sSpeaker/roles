@@ -10,3 +10,8 @@ package_ensure:
     label: "Package status"
     description: "NTP package status"
     default: "+*"
+custom:
+    type: text
+    value: {key: value}
+    label: custom
+    default: "" 
