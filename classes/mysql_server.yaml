@@ -4,20 +4,28 @@ service_enabled:
     value: True
     description: "Service will start automaticaly after reboot"
     default: False
+    options:
+        label: service
 package_ensure:
     type: list
     value: [present, absent, 1.2, 1.3]
     label: "Package status"
     description: "Mysql package status"
     default: absent
+    options:
+        label: service
 package_name:
     type: string
     value: "+*"
     label: "Package name"
     description: "Name of mysql server package"
     default: "+*"
+    options:
+        label: service
 custom:
     type: text
     value: {key: value}
     label: custom
-    default: "" 
+    default: ""
+    options:
+        label: service 
