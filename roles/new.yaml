@@ -1,7 +1,7 @@
 apache:
+  custom: "first: 1\r\nsecond:2\r\n"
   package_ensure: present
   port: 999
-  redirect: 'True'
   service_ensure: running
 ntp:
   bla: bla
