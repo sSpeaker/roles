@@ -2,11 +2,13 @@ apache:
     package_ensure: present
     service_ensure: running
     port:           80
-    scriptalias:    "/usr/lib/cgi-bin"
+    redirect: true
+    temp: temp
 mysql_server:
     package_ensure: present
     package_name:   "mysql-server"
     service_enabled: true
+    temp_server: temp_server
 ntp:
     package_ensure: present
-    servers:        {"ntp1.corp.com", "ntp2.corp.com"}
+    servers: ["ntp1.corp.com", "ntp2.corp.com"]
