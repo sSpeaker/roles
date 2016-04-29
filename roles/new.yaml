@@ -5,6 +5,6 @@ apache:
   second: 2
   service_ensure: running
 ntp:
-  custon: ''
+  custom: ''
   package_ensure: present
   servers: '-'
