@@ -6,7 +6,5 @@ apache:
   service_ensure: running
 ntp:
   custon: ''
-  first: 1
   package_ensure: present
-  second: 2
   servers: '-'
