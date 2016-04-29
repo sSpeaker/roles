@@ -8,6 +8,6 @@ package_ensure:
     type: list
     options:
         label: package_ensure
-        choices: {present, absent}
+        choices: [present, absent]
         help_text: "NTP package status"
         initial: absent

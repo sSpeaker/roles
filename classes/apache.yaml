@@ -9,7 +9,7 @@ package_ensure:
     type: list
     options:
         label: package
-        choices: {present, absent, 1.2, 1.3}
+        choices: [present, absent, 1.2, 1.3]
         help_text: "Apache package status"
         initial: absent
 port:
