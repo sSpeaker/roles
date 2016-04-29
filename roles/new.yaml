@@ -4,5 +4,6 @@ apache:
   redirect: 'True'
   service_ensure: running
 ntp:
+  bla: bla
   package_ensure: present
   servers: '-'
