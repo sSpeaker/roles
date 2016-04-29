@@ -1,9 +1,10 @@
 apache:
-  custom: "first: 1\r\nsecond:2\r\n"
   package_ensure: present
   port: 999
   service_ensure: running
+first: 1
 ntp:
   bla: bla
   package_ensure: present
   servers: '-'
+second: 2
