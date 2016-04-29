@@ -1,23 +1,13 @@
 servers:
     type: string
-    value: "+*"
-    label: Servers
-    description: "Comma separated list of NTP servers to get time"
-    default: "+*"
     options:
-        label: service
+        label: servers
+        help_text: "Comma separated list of NTP servers to get time"
+        initial: "+*"
 package_ensure:
     type: list
-    value: [present, absent]
-    label: "Package status"
-    description: "NTP package status"
-    default: "+*"
     options:
-        label: service
-custom:
-    type: text
-    value: {key: value}
-    label: custom
-    default: ""
-    options:
-        label: service 
+        label: package_ensure
+        choices: {present, absent}
+        help_text: "NTP package status"
+        initial: absent
