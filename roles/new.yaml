@@ -5,6 +5,7 @@ apache:
   second: 2
   service_ensure: running
 ntp:
-  bla: bla
+  first: 1
   package_ensure: present
+  second: 2
   servers: '-'
