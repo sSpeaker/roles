@@ -1,10 +1,10 @@
 apache:
+  first: 1
   package_ensure: present
   port: 999
+  second: 2
   service_ensure: running
-first: 1
 ntp:
   bla: bla
   package_ensure: present
   servers: '-'
-second: 2
