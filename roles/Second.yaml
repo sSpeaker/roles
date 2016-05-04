@@ -1,0 +1,4 @@
+ntp:
+  package_ensure: absent
+  servers: +*
+  value: 1
