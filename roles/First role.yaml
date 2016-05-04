@@ -1,5 +1,5 @@
 apache:
-  first: value
   package_ensure: absent
-  port: 80
+  port: 81
   service_ensure: stopped
+  value: 1
