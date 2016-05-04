@@ -2,7 +2,7 @@ apache:
   first: 1
   package_ensure: present
   port: 999
-  second: value new
+  second: 2
   service_ensure: running
 ntp:
   package_ensure: present
