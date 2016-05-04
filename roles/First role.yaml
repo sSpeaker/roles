@@ -1,5 +1,5 @@
 apache:
-  first: bukva 2
+  first: value
   package_ensure: absent
   port: 80
   service_ensure: stopped
