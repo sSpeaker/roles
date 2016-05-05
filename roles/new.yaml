@@ -1,3 +1,4 @@
+---
 apache:
   first: 1
   package_ensure: present
