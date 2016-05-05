@@ -1,3 +1,2 @@
 ---
-test_class:
-  text: "Hello from hiera"
+test_class::text: "Hello from hiera"
