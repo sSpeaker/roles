@@ -9,5 +9,6 @@ classes:
 - apache
 - ntp
 ntp:
+  bla: bla
   package_ensure: present
   servers: '-'
