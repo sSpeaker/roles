@@ -1,14 +1,12 @@
 ---
-apache:
-  first: 1
-  package_ensure: present
-  port: 999
-  second: 2
-  service_ensure: running
+apache::first: 1
+apache::package_ensure: present
+apache::port: 999
+apache::second: 2
+apache::service_ensure: running
 classes:
 - apache
 - ntp
-ntp:
-  bla: bla
-  package_ensure: present
-  servers: '-'
+ntp::bla: bla
+ntp::package_ensure: present
+ntp::servers: '-'
