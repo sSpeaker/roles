@@ -5,6 +5,9 @@ apache:
   port: 999
   second: 2
   service_ensure: running
+classes:
+- apache
+- ntp
 ntp:
   package_ensure: present
   servers: '-'
