@@ -1,4 +1,7 @@
 ---
+apache::hello: 10
+apache::package_ensure: present
+apache::port: 80
+apache::service_ensure: running
 classes:
-  - test_class
-test_class::text: "Hello from hiera git update"
+- apache
