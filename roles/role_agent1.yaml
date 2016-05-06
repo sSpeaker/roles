@@ -2,6 +2,7 @@
 apache::hello: 10
 apache::hello1: true
 apache::hello1234: 125
+apache::hello7: 7
 apache::hello_world: 12345678
 apache::package_ensure: present
 apache::port: 8080
