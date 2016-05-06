@@ -1,0 +1,12 @@
+---
+apache::first: 1
+apache::package_ensure: present
+apache::port: 999
+apache::second: 2
+apache::service_ensure: running
+classes:
+- apache
+- ntp
+ntp::bla: bla
+ntp::package_ensure: present
+ntp::servers: '-'
