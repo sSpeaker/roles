@@ -2,6 +2,6 @@
 apache::hello: 10
 apache::package_ensure: present
 apache::port: 8080
-apache::service_ensure: running
+apache::service_ensure: stopped
 classes:
 - apache
