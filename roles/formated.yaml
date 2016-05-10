@@ -8,6 +8,7 @@ apache::service_ensure: running
 classes:
 - apache
 - ntp
+
 ntp::bla: bla
 ntp::package_ensure: present
 ntp::servers: '-'
