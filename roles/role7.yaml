@@ -1,6 +1,0 @@
-apache:
-  field1: value1
-  port: 80
-ntp:
-  temp1: temp_value1
-  temp2: temp_value2
