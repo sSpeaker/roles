@@ -3,7 +3,7 @@ options:
     options:
         label: options
         help_text: "Additional java options"
-        initial: "+*"
+        initial: ""
 package_ensure:
     type: list
     options:
