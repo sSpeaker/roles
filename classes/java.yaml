@@ -1,0 +1,13 @@
+options:
+    type: string
+    options:
+        label: options
+        help_text: "Additional java options"
+        initial: "+*"
+package_ensure:
+    type: list
+    options:
+        label: version
+        choices: [absent, 1.6, 1.7, 1.8]
+        help_text: "Java version"
+        initial: 1.6
