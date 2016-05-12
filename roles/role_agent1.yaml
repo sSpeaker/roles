@@ -3,11 +3,14 @@ apache::package_ensure: present
 apache::port: 80
 apache::service_ensure: running
 classes:
-- apache
-- ntp
+- haproxy
 - java
+- ntp
 - rabbitmq
 - mysql
+- apache
+haproxy::package_ensure: present
+haproxy::service_ensure: stopped
 java::options: ' '
 java::package_ensure: '1.8'
 mysql::package_ensure: present
