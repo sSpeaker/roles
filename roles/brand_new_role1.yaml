@@ -6,3 +6,8 @@ apache::port: 8081
 apache::service_ensure: running
 classes:
 - apache
+- rabbitmq
+rabbitmq::main_port: 5672
+rabbitmq::management_port: 15672
+rabbitmq::package_ensure: present
+rabbitmq::service_ensure: running
