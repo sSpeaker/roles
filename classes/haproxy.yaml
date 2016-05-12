@@ -1,0 +1,14 @@
+service_ensure:
+    type: list
+    options:
+        label: service
+        choices: [running, stopped]
+        help_text: "HAProxy service status"
+        initial: stopped
+package_ensure:
+    type: list
+    options:
+        label: package
+        choices: [present, absent, latest]
+        help_text: "HAProxy package status"
+        initial: present
