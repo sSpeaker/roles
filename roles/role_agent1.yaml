@@ -5,8 +5,11 @@ apache::service_ensure: running
 classes:
 - apache
 - ntp
+- java
 - rabbitmq
 - mysql
+java::options: ' '
+java::package_ensure: '1.8'
 mysql::package_ensure: present
 mysql::package_name: mysql-server
 mysql::service_enabled: true
