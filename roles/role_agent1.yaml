@@ -4,3 +4,6 @@ apache::port: 80
 apache::service_ensure: running
 classes:
 - apache
+- ntp
+ntp::package_ensure: present
+ntp::servers: ntp.ubuntu.com
