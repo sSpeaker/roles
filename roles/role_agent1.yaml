@@ -1,6 +1,13 @@
 ---
 apache::package_ensure: present
-apache::port: 8080
+apache::port: 80
 apache::service_ensure: running
 classes:
 - apache
+- ntp
+- mysql
+mysql::package_ensure: present
+mysql::package_name: mysql-server
+mysql::service_enabled: true
+ntp::package_ensure: present
+ntp::servers: ntp.ubuntu.com
