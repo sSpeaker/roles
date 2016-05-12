@@ -1,6 +1,8 @@
 ---
+apache::custom2: bla-bla
+apache::custom_field1: value1
+apache::package_ensure: '1.2'
+apache::port: 8081
+apache::service_ensure: running
 classes:
 - apache
-apache::package_ensure: present
-apache::port: 8080
-apache::service_ensure: running
