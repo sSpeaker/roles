@@ -1,0 +1,19 @@
+service_enabled:
+    type: bool
+    options:
+        label: service_enabled
+        help_text: "PostgreSQL Server service status"
+        initial: False
+package_ensure:
+    type: list
+    options:
+        label: package_ensure
+        choices: [present, absent, latest]
+        help_text: "PostgreSQL Server package ensure"
+        initial: present
+package_name:
+    type: string
+    options:
+        label: package_name
+        help_text: "PostgreSQL Server package_name"
+        initial:  "+*"
