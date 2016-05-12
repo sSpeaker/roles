@@ -1,0 +1,30 @@
+service_ensure:
+    type: list
+    options:
+        label: service
+        choices: [running, stopped]
+        help_text: "RabbitMQ service status"
+        initial: running
+package_ensure:
+    type: list
+    options:
+        label: package
+        choices: [present, absent, latest]
+        help_text: "RabbitMQ package status"
+        initial: present
+main_port:
+    type: number
+    options:
+        label: Main port
+        min_value: 1
+        max_value: 65000
+        help_text: RabbitMQ main port number
+        initial: 5672
+management_port:
+    type: number
+    options:
+        label: Management port
+        min_value: 1
+        max_value: 65000
+        help_text: RabbitMQ main port number
+        initial: 15672
