@@ -16,4 +16,4 @@ package_name:
     options:
         label: package_name
         help_text: "MySql Server package_name"
-        initial:  "+*"
+        initial:  "mysql-server"
