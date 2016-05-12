@@ -1,7 +1,7 @@
 ---
-apache::package_ensure: absent
+apache::package_ensure: present
 apache::port: 8080
-apache::service_ensure: stopped
+apache::service_ensure: running
 classes:
 - apache
 - ntp
