@@ -10,4 +10,4 @@ package_ensure:
         label: package_ensure
         choices: [present, absent]
         help_text: "NTP package status"
-        initial: absent
+        initial: present
