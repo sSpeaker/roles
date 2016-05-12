@@ -1,6 +1,9 @@
 ---
 apache::package_ensure: present
-apache::port: 8080
-apache::service_ensure: running
+apache::port: 80
+apache::service_ensure: stopped
 classes:
 - apache
+- ntp
+ntp::package_ensure: present
+ntp::servers: ntp.ubuntu.com
