@@ -3,7 +3,7 @@ servers:
     options:
         label: servers
         help_text: "Comma separated list of NTP servers to get time"
-        initial: "+*"
+        initial: "ntp.ubuntu.com"
 package_ensure:
     type: list
     options:
