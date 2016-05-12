@@ -16,4 +16,4 @@ package_name:
     options:
         label: package_name
         help_text: "PostgreSQL Server package_name"
-        initial:  "+*"
+        initial:  "postgresql"
