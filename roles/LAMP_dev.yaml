@@ -6,8 +6,10 @@ classes:
 - apache
 - java
 - mysql
+java::custom_filed1: value1
+java::custom_filed2: value2
 java::options: ' '
-java::package_ensure: '1.6'
+java::package_ensure: '1.8'
 mysql::package_ensure: present
 mysql::package_name: mysql-server
 mysql::service_enabled: true
