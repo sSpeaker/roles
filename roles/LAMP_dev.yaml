@@ -4,6 +4,7 @@ apache::port: 8080
 apache::service_ensure: running
 classes:
 - apache
+- ntp
 - java
 - mysql
 java::custom_filed1: value1
@@ -13,3 +14,5 @@ java::package_ensure: '1.8'
 mysql::package_ensure: present
 mysql::package_name: mysql-server
 mysql::service_enabled: true
+ntp::package_ensure: present
+ntp::servers: ntp.ubuntu.com
