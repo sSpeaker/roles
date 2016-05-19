@@ -1,9 +1,0 @@
----
-classes:
-- apache
-
-apache::package_ensure: present
-apache::port: 8080
-apache::service_ensure: running
-apache::field1: value1
-apache::field2: value2
