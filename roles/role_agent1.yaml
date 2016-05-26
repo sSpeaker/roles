@@ -1,9 +1,11 @@
 ---
+apache::ensure: stopped
 apache::package_ensure: present
 apache::port: 777
 apache::service_ensure: running
 classes:
 - apache
 - ntp
+- apache
 ntp::package_ensure: present
 ntp::servers: ntp.ubuntu.com
