@@ -1,7 +1,7 @@
 ---
 apache::package_ensure: present
-apache::port: 777
-apache::service_ensure: stopped
+apache::port: 8080
+apache::service_ensure: running
 classes:
 - apache
 - ntp
