@@ -1,5 +1,6 @@
 ---
 apache::package_ensure: present
+apache::password: here
 apache::port: 8008
 apache::service_ensure: running
 classes:
