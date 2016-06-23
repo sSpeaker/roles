@@ -6,14 +6,9 @@ apache::service_ensure: running
 classes:
 - apache
 - ntp
-- rabbitmq
 - mysql
 mysql::package_ensure: present
 mysql::package_name: mysql-server
 mysql::service_enabled: true
 ntp::package_ensure: present
 ntp::servers: ntp.ubuntu.com
-rabbitmq::main_port: 5672
-rabbitmq::management_port: 15673
-rabbitmq::package_ensure: present
-rabbitmq::service_ensure: running
