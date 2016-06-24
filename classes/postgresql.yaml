@@ -22,5 +22,5 @@ password:
     options:
         label: password
         help_text: "PostgreSQL Server password"
-        initial:
+        initial: ""
 
