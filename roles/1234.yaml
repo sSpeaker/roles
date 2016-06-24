@@ -3,5 +3,5 @@ classes:
 - postgresql
 postgresql::package_ensure: present
 postgresql::package_name: postgresql
-postgresql::password: enc7777
+postgresql::password: enc88888
 postgresql::service_enabled: false
