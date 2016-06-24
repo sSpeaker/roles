@@ -1,0 +1,7 @@
+---
+classes:
+- postgresql
+postgresql::package_ensure: present
+postgresql::package_name: postgresql
+postgresql::password: ''
+postgresql::service_enabled: true
