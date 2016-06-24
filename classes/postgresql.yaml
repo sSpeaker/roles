@@ -17,3 +17,10 @@ package_name:
         label: package_name
         help_text: "PostgreSQL Server package_name"
         initial:  "postgresql"
+password:
+    type: encrypted
+    options:
+        label: password
+        help_text: "PostgreSQL Server password"
+        initial:
+
