@@ -10,4 +10,4 @@ java::options: ' '
 java::package_ensure: '1.6'
 mysql::package_ensure: present
 mysql::package_name: mysql-server
-mysql::service_enabled: true
+mysql::service_enabled: false
