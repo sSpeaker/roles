@@ -1,0 +1,4 @@
+---
+fields:
+- postgresql::password
+- other_role::other_field
