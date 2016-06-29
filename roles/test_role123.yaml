@@ -4,12 +4,7 @@ apache::port: 80
 apache::service_ensure: running
 classes:
 - apache
-- postgresql
 - mysql
 mysql::package_ensure: present
 mysql::package_name: mysql-server
 mysql::service_enabled: true
-postgresql::package_ensure: present
-postgresql::package_name: postgresql
-postgresql::password: ENC[PKCS7,MIIBeQYJKoZIhvcNAQcDoIIBajCCAWYCAQAxggEhMIIBHQIBADAFMAACAQEwDQYJKoZIhvcNAQEBBQAEggEACbUxnlrt2aWaM41KAxZe/7vTi38ESw0VQjzs2Xsa1yzsV6IIzUpA1TiYwg6IM0Cp3dUPbesYx3FLqUi0+BYS7ISAoX1C9nEczuCi+9sv5n/msojw/9CD2/uniOBHD5ZE5zkkPpEGn1j/Q79Cwm5FFIJOARtL4aIGDsb5m/CMcvxRYSic1SsBQjK7roRDS18oxiGHU9qmtdadcxSjXlktmEwSPRBhVHOUfsHu6MVLygwXNYM9wl9yueXR/fTegSTDkLb6anRX8TVJeXQnYHGCQspF+Q977X9QgJTfXFdnweTvee/XWjcBezX3c36yiaOJzrAQhybfZv1D+JigYGU8WzA8BgkqhkiG9w0BBwEwHQYJYIZIAWUDBAEqBBDPVchDWXWE9Tk000ADyoPbgBBiIT2Qq5NStt3tSxvYy5ep]
-postgresql::service_enabled: true
