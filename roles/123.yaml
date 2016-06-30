@@ -1,5 +1,5 @@
 ---
-apache::package_ensure: present
+apache::package_ensure: absent
 apache::port: 80
 apache::service_ensure: running
 classes:
