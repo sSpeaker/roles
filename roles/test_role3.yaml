@@ -1,6 +1,6 @@
 ---
 apache::package_ensure: present
-apache::port: 80
+apache::port: 801
 apache::service_ensure: running
 classes:
 - apache
