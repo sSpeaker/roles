@@ -1,0 +1,12 @@
+---
+apache::package_ensure: present
+apache::port: 80
+apache::secret: '321'
+apache::service_ensure: running
+classes:
+- apache
+- postgresql
+postgresql::package_ensure: present
+postgresql::package_name: postgresql
+postgresql::password: ENC[PKCS7,MIIBeQYJKoZIhvcNAQcDoIIBajCCAWYCAQAxggEhMIIBHQIBADAFMAACAQEwDQYJKoZIhvcNAQEBBQAEggEALaM6WBtk2XOSw0VLGGJDny/NOEPOoYBFH4KeDci1aBM3uXJmzRgw/0kcf9a1ZX0CWF0ij973oeKxjXdkEEpAMC1rjZi3ydn4bwGOJ/PAXerWMtUwa/RlOw8z8FqVWAFZRxbc1Fuc/8hKBpM89ZTJQQX8bM2Lhso9ucDL65IIRFCaoz9CXjyihLKLOoXDyQBXYB/aZIcE5+041+t61K5bPoc1IDS3uzxtORXLc5V2yAx6EloxbmQCfCPLYMo7tKghTncM/liPFvW4l0Aon5bXHIeWiyO6t63zG0aYQP5QRe00byBMra0g5/lpmm6EpSb/hL82uN8fpKD7peGWwmar1jA8BgkqhkiG9w0BBwEwHQYJYIZIAWUDBAEqBBAHcGCJaFbQ+3gpHpwXvu1qgBAjAxLbUx4tOEZQ0mNpsfwx]
+postgresql::service_enabled: true
