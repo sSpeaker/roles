@@ -1,4 +1,5 @@
 ---
 fields:
 - postgresql::password
+- apache::secret
 - other_role::other_field
