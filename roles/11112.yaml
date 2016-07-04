@@ -1,9 +1,0 @@
----
-apache::package_ensure: present
-apache::port: 80
-apache::service_ensure: running
-classes:
-- apache
-- java
-java::options: ' '
-java::package_ensure: '1.6'
