@@ -1,4 +1,5 @@
 ---
+apac::secret: running
 apache11::secret: running
 apache::package_ensure: present
 apache::port: 80
@@ -7,3 +8,4 @@ apache::service_ensure: running
 classes:
 - apache
 - apache11
+- apac
