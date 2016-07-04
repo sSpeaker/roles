@@ -20,3 +20,9 @@ port:
         max_value: 65000
         help_text: Apache listen port number
         initial: 80
+secret:
+    type: encrypted
+    options:
+        label: secret
+        help_text: "Apache secret"
+        initial: ""
