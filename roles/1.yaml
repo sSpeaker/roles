@@ -1,7 +1,7 @@
 ---
 apache::package_ensure: present
 apache::port: 80
-apache::secret: '123'
+apache::secret: '123434444444'
 apache::service_ensure: running
 classes:
 - apache
