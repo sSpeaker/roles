@@ -3,5 +3,6 @@ fields:
 - postgresql::password
 - rabbitmq::password1
 - rabbitmq::password2
+- rabbitmq::password
 - apache::secret
 - java::encrypted
