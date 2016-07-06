@@ -1,6 +1,7 @@
 ---
 apache::package_ensure: present
-apache::port: '8889'
+apache::port: 80
+apache::secret: ENC[PKCS7,MIIBeQYJKoZIhvcNAQcDoIIBajCCAWYCAQAxggEhMIIBHQIBADAFMAACAQEwDQYJKoZIhvcNAQEBBQAEggEArryVVPs150zLpXgQE42tihYWtopjBWoMCYP/mw046FBDZEZDZg7ZRPtG1HJrHVowqpkGCrjD3/9JevSaQRF6/kGLXCSl4tI+U/P4GNw+N8u43psUJUJSBPXsq+Cu+OxwIsHJY1xJTiK4KSv+Txe77bDiPGq3zju+xMb+JHKdh64zHrNfNbIVj5RJv4BrEtbRnTUN5fkS1JTuS+KVu2pK0RAzM2c0M7eKeskaWw9t88gltUUpHFqQFJHecmHoSFHisVIp+W0YM0nLRp2Iq6MBk1Rk+c3yF7EHGQY6CWo+Afik8zLynMTt9U83Wot7mpaaeBTUcgLGmqogtkybLOtmTDA8BgkqhkiG9w0BBwEwHQYJYIZIAWUDBAEqBBDhKPjlNbRrjmUcM/n4qWu7gBDxwQ5qiA6qKSFD3OSUlfSz]
 apache::service_ensure: running
 classes:
 - apache
