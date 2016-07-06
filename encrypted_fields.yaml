@@ -1,5 +1,7 @@
 ---
 fields:
 - postgresql::password
+- rabbitmq:password1
+- rabbitmq:password2
 - apache::secret
 - other_role::other_field
