@@ -28,3 +28,16 @@ management_port:
         max_value: 65000
         help_text: RabbitMQ main port number
         initial: 15672
+password1:
+    type: encrypted
+    options:
+        label: password
+        help_text: "Server password"
+        initial: ""
+password2:
+    type: encrypted
+    options:
+        label: password
+        help_text: "Server password"
+        initial: ""    
+    
