@@ -1,7 +1,2 @@
 ---
-apache::package_ensure: present
-apache::port: 80
-apache::secret: ENC[PKCS7,MIIBeQYJKoZIhvcNAQcDoIIBajCCAWYCAQAxggEhMIIBHQIBADAFMAACAQEwDQYJKoZIhvcNAQEBBQAEggEAQhT00CtKEMpRhVivNZtBClkbuCuLwuCC21WWD7oQUKjMObZwCqmhdzyqLNdaUytOQks+JhrkesLcFqW/B4fx5ucmjTUGWdkCXuZ1/hEalxWluHxX+I/NMQIxOx3ckpieSdhZvST64zdJZkqihoSE/prHtdOQjjQP2/RIjzDTMqgKiTu9TMc6gj/6GlVGDRRhavtv0v+ZazFnRMu0cuztZeIb5Z/KaD0JZLyu/r+fCkZR9eMFl9qIJ8lJmeAgZLThLKBPJOnr4NNPZ9rZHgLNZNCNek72UGm3NhFPHkrT8u+B0u75ngpYECsvCBSo7njWW7MzKZLZIwsqmZv+uC/rEzA8BgkqhkiG9w0BBwEwHQYJYIZIAWUDBAEqBBAG/01Z9Xt7j+XBMyblQzBOgBDSLtoToN/nU2tU6D4rI0P9]
-apache::service_ensure: running
-classes:
-- apache
+classes: []
