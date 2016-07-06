@@ -1,9 +1,6 @@
 ---
 classes:
-- rabbitmq
-rabbitmq::main_port: 5672
-rabbitmq::management_port: 15672
-rabbitmq::package_ensure: present
-rabbitmq::password1: '1231231'
-rabbitmq::password2: '12312312312'
-rabbitmq::service_ensure: running
+- java
+java::encrypted: 123456
+java::options: ' '
+java::package_ensure: '1.6'
