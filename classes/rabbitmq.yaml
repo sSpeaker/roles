@@ -31,10 +31,16 @@ management_port:
 password1:
     type: encrypted
     options:
-        label: password
+        label: password1
         help_text: "Server password"
         initial: ""
 password2:
+    type: encrypted
+    options:
+        label: password2
+        help_text: "Server password"
+        initial: ""
+password:
     type: encrypted
     options:
         label: password
