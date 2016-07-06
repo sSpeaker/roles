@@ -4,6 +4,6 @@ classes:
 rabbitmq::main_port: 5672
 rabbitmq::management_port: 15672
 rabbitmq::package_ensure: present
-rabbitmq::password1: '1212312'
-rabbitmq::password2: '12312312'
+rabbitmq::password1: '12312312'
+rabbitmq::password2: '12312312312'
 rabbitmq::service_ensure: stopped
