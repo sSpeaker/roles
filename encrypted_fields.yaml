@@ -1,7 +1,7 @@
 ---
 fields:
 - postgresql::password
-- rabbitmq:password1
-- rabbitmq:password2
+- rabbitmq::password1
+- rabbitmq::password2
 - apache::secret
 - java::encrypted
