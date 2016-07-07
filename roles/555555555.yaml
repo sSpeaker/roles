@@ -1,10 +1,5 @@
 ---
-apache::package_ensure: present
-apache::port: 80
-apache::secret: ENC[PKCS7,MIIBeQYJKoZIhvcNAQcDoIIBajCCAWYCAQAxggEhMIIBHQIBADAFMAACAQEwDQYJKoZIhvcNAQEBBQAEggEAaMhXKRJUPFFi27pYGr6zqVJM9GkQ8QnNoVJKkj12azX+kSMjH/2Vb4MO0DIVDgVZTeNVvcyFmeG/d8bjT/Z302/eWI2wLQbHLNM3Irz+0LlbR7tYihoH8mro4PJIglZxEZQjlTz6XnsF9qCs2TBQRUdRZxd1tdhU/nRh62lhOjO0Ua7egPMil5mP2OUd4kh77GJLvpnTR18xSPDqTWX736bI9HUZBzfvF/K9cXfERwkgEf5Nr3dYBQbAFg/g25IuxANSNFJZBdrksGlvi2c2+qVJ2HOMfjsxUmz5yNelm54P8LN0I8AalgOBSuB5CzIN/r/D8tYg3Kayw1IMrv3LZTA8BgkqhkiG9w0BBwEwHQYJYIZIAWUDBAEqBBDNJxRD8oAzpKbaK5Vw2N7wgBABJyzvWsko6XBefSLjwGbw]
-apache::service_ensure: running
 classes:
-- apache
 - postgresql
 - rabbitmq
 postgresql::package_ensure: present
